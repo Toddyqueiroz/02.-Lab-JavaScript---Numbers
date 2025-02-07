@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Recuperação - Programação de Clientes Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="box">
+        <h2>Computador de Bordo</h2>
+        <label for="dinheiro">Informe quantos R$ dispõe</label>
+        <input type="number" id="dinheiro" placeholder="Ex: 999.99">
+        <button onclick="calcularCombustivel()">Calcular</button>
+        <p id="resultadoCombustivel"></p>
+    </div>
+
+    <div class="box">
+        <h2>Calculadora de IMC</h2>
+        <label for="peso">Informe o peso (KG)</label>
+        <input type="number" id="peso" placeholder="Ex: 70">
+        <label for="altura">Informe a altura (m)</label>
+        <input type="number" id="altura" placeholder="Ex: 1.75">
+        <button onclick="calcularIMC()">Calcular</button>
+        <p id="resultadoIMC"></p>
+    </div>
+
+    <div class="box">
+        <h2>Simulador de Lançamento de Dados</h2>
+        <button onclick="simularLancamentos()">Simular</button>
+        <p id="resultadoSimulacao"></p>
+    </div>
+
+    <div class="box">
+        <h2>Inversor de Nomes</h2>
+        <input type="text" id="nome" placeholder="Insira um nome">
+        <button onclick="adicionarNome()">Adicionar nome</button>
+        <button onclick="inverterNomes()">Inverter</button>
+        <h3>Lista de Nomes Digitados</h3>
+        <ul id="listaNomes"></ul>
+        <h3>Lista de Nomes Invertidos</h3>
+        <ul id="listaNomesInvertidos"></ul>
+    </div>
+
+    <div class="box">
+        <h2>Palíndromo</h2>
+        <input type="text" id="palavra" placeholder="Digite uma palavra">
+        <button onclick="verificarPalindromo()">Testa Palíndromo</button>
+        <p id="resultadoPalindromo"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
